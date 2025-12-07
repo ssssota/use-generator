@@ -1,7 +1,7 @@
 {
 	"name": "@ssssota/use-generator",
 	"description": "Hooks for using generator functions in React/Preact/SolidJS/Vue/Svelte",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"license": "MIT",
 	"type": "module",
 	"exports": {
