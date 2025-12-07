@@ -6,8 +6,8 @@ on:
       - "v*.*.*"
 
 permissions:
-  contents: read
-  id-token: write
+  contents: write # to create releases
+  id-token: write # for trusted publishing
 
 jobs:
   check:
