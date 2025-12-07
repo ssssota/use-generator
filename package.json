@@ -1,0 +1,83 @@
+{
+	"name": "@ssssota/use-generator",
+	"version": "0.1.0",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.mts",
+			"default": "./dist/index.mjs"
+		},
+		"./preact": {
+			"types": "./dist/preact.d.mts",
+			"default": "./dist/preact.mjs"
+		},
+		"./react": {
+			"types": "./dist/react.d.mts",
+			"default": "./dist/react.mjs"
+		},
+		"./svelte": {
+			"types": "./dist/svelte.svelte.d.mts",
+			"default": "./dist/svelte.svelte.mjs"
+		},
+		"./vue": {
+			"types": "./dist/vue.d.mts",
+			"default": "./dist/vue.mjs"
+		},
+		"./solid": {
+			"types": "./dist/solid.d.mts",
+			"default": "./dist/solid.mjs"
+		}
+	},
+	"scripts": {
+		"build": "tsdown",
+		"test": "vitest",
+		"check": "tsc -b && biome check",
+		"fmt": "biome check --write",
+		"prepare": "pnpm run build"
+	},
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.8",
+		"@sveltejs/vite-plugin-svelte": "^6.2.1",
+		"@testing-library/preact": "^3.2.4",
+		"@testing-library/react": "^16.1.0",
+		"@types/react": "^19.2.7",
+		"jsdom": "^25.0.1",
+		"preact": "^10.28.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"solid-js": "^1.9.10",
+		"svelte": "^5.45.5",
+		"tsdown": "^0.17.0",
+		"typescript": "^5.9.3",
+		"vitest": "^4.0.10",
+		"vue": "^3.5.13"
+	},
+	"peerDependencies": {
+		"preact": ">=10",
+		"react": ">=18",
+		"solid-js": ">=1",
+		"svelte": ">=5",
+		"vue": ">=3"
+	},
+	"peerDependenciesMeta": {
+		"preact": {
+			"optional": true
+		},
+		"react": {
+			"optional": true
+		},
+		"solid-js": {
+			"optional": true
+		},
+		"svelte": {
+			"optional": true
+		},
+		"vue": {
+			"optional": true
+		}
+	},
+	"packageManager": "pnpm@10.24.0+sha512.01ff8ae71b4419903b65c60fb2dc9d34cf8bb6e06d03bde112ef38f7a34d6904c424ba66bea5cdcf12890230bf39f9580473140ed9c946fef328b6e5238a345a"
+}
