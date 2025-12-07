@@ -1,6 +1,8 @@
 {
 	"name": "@ssssota/use-generator",
+	"description": "Hooks for using generator functions in React/Preact/SolidJS/Vue/Svelte",
 	"version": "0.1.0",
+	"license": "MIT",
 	"type": "module",
 	"exports": {
 		".": {
@@ -28,6 +30,15 @@
 			"default": "./dist/solid.mjs"
 		}
 	},
+	"keywords": [
+		"generator",
+		"hooks",
+		"react",
+		"preact",
+		"solid",
+		"vue",
+		"svelte"
+	],
 	"scripts": {
 		"build": "tsdown",
 		"test": "vitest",
