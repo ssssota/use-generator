@@ -1,8 +1,9 @@
 name: Release
 
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - "v*.*.*"
 
 permissions:
   contents: read
@@ -18,3 +19,4 @@ jobs:
       - uses: ./.github/actions/setup
       - run: pnpm test
       - run: pnpm publish --access public
+      - uses: softprops/action-gh-release@v2
